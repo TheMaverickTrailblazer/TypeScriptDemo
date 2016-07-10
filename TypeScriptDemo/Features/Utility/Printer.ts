@@ -1,9 +1,9 @@
 ﻿module TSDemo {
-    export class Logger {
+    export class Printer {
         static WriteInConole(text: string) {
             console.log(`*** ${text} ***`);
         }
-        static WriteInDocument(text: string, includeTimestamp: boolean = false) {
+        static print(text: string, includeTimestamp: boolean = false) {
             let ts = "",
                 today = new Date();
             if (includeTimestamp)
@@ -25,6 +25,11 @@
             let el = document.getElementById('content');
             el.innerHTML += text;
 
+        }
+
+        static printNext(text: string, includeTimestamp: boolean = false) {
+            text = `--------------<br\>${text}`;
+            this.print(text, includeTimestamp);
         }
     }
 }

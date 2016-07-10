@@ -5,13 +5,13 @@
                 platform: platform,
                 service: service
             }
-            TSDemo.Logger.WriteInDocument(`${header.service} is hosted on ${header.platform}`);
+            TSDemo.Printer.print(`${header.service} is hosted on ${header.platform}`);
         }
     }
 }
 
 window.onload = function () {
-    TSDemo.Logger.setTitle("Optional / Default Parameter Demo");
+    TSDemo.Printer.setTitle("Optional / Default Parameter Demo");
 
     let provider = new TSDemo.CloudProvider();
     //setHeader called without passing caller

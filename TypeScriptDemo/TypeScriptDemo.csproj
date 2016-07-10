@@ -23,6 +23,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="app.css" />
+    <Content Include="Features\Types\BasicTypes.js" />
     <Content Include="index.html" />
     <Content Include="web.config" />
   </ItemGroup>
@@ -31,9 +32,13 @@
     <TypeScriptCompile Include="Features\ES6\ArrowFunctions.ts" />
     <TypeScriptCompile Include="Features\ES6\const.ts" />
     <TypeScriptCompile Include="Features\ES6\DefaultParam.ts" />
+    <TypeScriptCompile Include="Features\ES6\Destructuring.ts" />
+    <TypeScriptCompile Include="Features\ES6\ForOfLoop.ts" />
     <TypeScriptCompile Include="Features\ES6\Let.ts" />
+    <TypeScriptCompile Include="Features\ES6\SpreadOperator.ts" />
     <TypeScriptCompile Include="Features\ES6\TemplateStrings.ts" />
-    <TypeScriptCompile Include="Features\Utility\Logger.ts" />
+    <TypeScriptCompile Include="Features\Types\TSTypes.ts" />
+    <TypeScriptCompile Include="Features\Utility\Printer.ts" />
   </ItemGroup>
   <ItemGroup>
     <None Include="web.Debug.config">
@@ -43,9 +48,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Features\Rest\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
   </PropertyGroup>
