@@ -1,5 +1,4 @@
-﻿
-module TSDemo {
+﻿namespace TSDemo {
     export class ForOfController {
         private cars: Car[] = [
             { name: "Honda CRV", year: 2012, hasBluetooth: true },
@@ -24,7 +23,7 @@ module TSDemo {
 }
 
 window.onload = function () {
-    TSDemo.Printer.setTitle("For..Of Loop Demo");
+    TSDemo.Printer.printTitle("For..Of Loop Demo");
 
     let carsController = new TSDemo.ForOfController();
     carsController.printCars();

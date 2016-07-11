@@ -1,4 +1,4 @@
-﻿module TSDemo {
+﻿namespace TSDemo {
     export interface Account {
         name: string;
         number: number;
@@ -28,7 +28,7 @@
 }
 
 window.onload = function () {
-    TSDemo.Printer.setTitle("Destructuring Demo");
+    TSDemo.Printer.printTitle("Destructuring Demo");
 
     let accountController = new TSDemo.AccountController();
     accountController.printAccountSummary();

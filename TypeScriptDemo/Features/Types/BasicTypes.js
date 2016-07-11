@@ -13,7 +13,7 @@ function BasicTypesTest() {
     }
 }
 window.onload = function () {
-    TSDemo.Printer.setTitle("Type system - Basic types demo");
+    TSDemo.Printer.printTitle("Type system - Basic types demo");
 
     var basicTypesTester = BasicTypesTest();
     basicTypesTester();

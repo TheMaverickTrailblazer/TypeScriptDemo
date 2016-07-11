@@ -1,4 +1,4 @@
-﻿module TSDemo {
+﻿namespace TSDemo {
 
     export class SpreadOperator {
         private SUVs: string[] = ["CRV", "RAV4", "X5", "Q5"];
@@ -18,7 +18,7 @@
 }
 
 window.onload = function () {
-    TSDemo.Printer.setTitle("Rest Parameter / Spread Operator Demo");
+    TSDemo.Printer.printTitle("Rest Parameter / Spread Operator Demo");
 
     let spreadOpTester = new TSDemo.SpreadOperator();
     spreadOpTester.printCars();

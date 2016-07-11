@@ -1,4 +1,4 @@
-﻿module TSDemo {
+﻿namespace TSDemo {
     export interface Car {
         name: string;
         year: number;
@@ -41,7 +41,7 @@
 }
 
 window.onload = function () {
-    TSDemo.Printer.setTitle("Arrow Functions Demo");
+    TSDemo.Printer.printTitle("Arrow Functions Demo");
 
     let carController = new TSDemo.CarController();
     carController.getCarsWithBluetooth();

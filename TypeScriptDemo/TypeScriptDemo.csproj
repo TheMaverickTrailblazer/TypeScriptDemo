@@ -37,7 +37,9 @@
     <TypeScriptCompile Include="Features\ES6\Let.ts" />
     <TypeScriptCompile Include="Features\ES6\SpreadOperator.ts" />
     <TypeScriptCompile Include="Features\ES6\TemplateStrings.ts" />
+    <TypeScriptCompile Include="Features\Types\Inheritance.ts" />
     <TypeScriptCompile Include="Features\Types\TSTypes.ts" />
+    <TypeScriptCompile Include="Features\Types\TSTypesTester.ts" />
     <TypeScriptCompile Include="Features\Utility\Printer.ts" />
   </ItemGroup>
   <ItemGroup>
@@ -82,7 +84,7 @@
     <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
     <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
     <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
-    <TypeScriptModuleKind />
+    <TypeScriptModuleKind>System</TypeScriptModuleKind>
     <TypeScriptOutFile />
     <TypeScriptOutDir />
     <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>

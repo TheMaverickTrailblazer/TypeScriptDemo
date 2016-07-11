@@ -1,4 +1,4 @@
-﻿module TSDemo {
+﻿namespace TSDemo {
     export class CloudProvider {
         requestService(service: string, platform: string = "Microsoft Azure") {
             let header = {
@@ -11,7 +11,7 @@
 }
 
 window.onload = function () {
-    TSDemo.Printer.setTitle("Optional / Default Parameter Demo");
+    TSDemo.Printer.printTitle("Optional / Default Parameter Demo");
 
     let provider = new TSDemo.CloudProvider();
     //setHeader called without passing caller

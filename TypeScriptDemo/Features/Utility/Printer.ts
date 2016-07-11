@@ -1,4 +1,4 @@
-﻿module TSDemo {
+﻿namespace TSDemo {
     export class Printer {
         static WriteInConole(text: string) {
             console.log(`*** ${text} ***`);
@@ -17,8 +17,11 @@
             this.WriteInConole(text);
         }
 
-        static setTitle(text: string) {
+        static printTitle(text: string) {
             this.updateDocument(`<H2> ${text} </H2>`);
+        }
+        static printSubTitle(text: string) {
+            this.updateDocument(`<br/><br/><b> ${text} </b>`);
         }
 
         static updateDocument(text: string) {
