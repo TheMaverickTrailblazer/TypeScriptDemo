@@ -28,7 +28,6 @@
     <Content Include="web.config" />
   </ItemGroup>
   <ItemGroup>
-    <TypeScriptCompile Include="app.ts" />
     <TypeScriptCompile Include="Features\ES6\ArrowFunctions.ts" />
     <TypeScriptCompile Include="Features\ES6\const.ts" />
     <TypeScriptCompile Include="Features\ES6\DefaultParam.ts" />
